@@ -1,0 +1,28 @@
+from tornado import web, ioloop
+from tornado.web import RequestHandler, StaticFileHandler
+import os
+
+# 获取当前绝对路径
+print(os.path.join(os.path.dirname(os.path.abspath(__file__)), "static"))
+
+
+class IndexHandler(RequestHandler):
+    def get(self):
+        self.write("Hello, world")
+
+
+_settings = {
+    "static_path": "./static",
+    "static_url_prefix": "/img/",
+    "debug": True,
+}
+
+
+if __name__ == "__main__":
+
+    # app = web.Application([(r"/", IndexHandler)], **_settings) # 方法一
+    app = web.Application(
+        [web.URLSpec("/img/(.*)", StaticFileHandler, {"path": "./static/"})], debug=True
+    )  # 方法二
+    app.listen(8888)
+    ioloop.IOLoop.current().start()
