@@ -1,0 +1,43 @@
+<title>Vdbench output/summary.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench summary report, created 17:46:31 3月 29 2024 CST (09:46:31 3月 29 2024 UTC)
+
+Link to logfile:                 <A HREF="logfile.html">logfile</A>
+Run totals:                      <A HREF="totals.html">totals</A>
+Vdbench status:                  <A HREF="status.html">status</A>
+Copy of input parameter files:   <A HREF="parmfile.html">parmfile</A>
+Copy of parameter scan detail:   <A HREF="parmscan.html">parmscan</A>
+Link to errorlog:                <A HREF="errorlog.html">errorlog</A>
+Link to flatfile:                <A HREF="flatfile.html">flatfile</A>
+
+Link to HOST reports:            <A HREF="localhost.html">localhost</A>
+Link to response time histogram: <A HREF="histogram.html">histogram</A>
+Link to workload skew report:    <A HREF="skew.html">skew</A>
+Link to SD reports:              <A HREF="sd1.html">sd1</A>     
+
+Link to workload report:         <A HREF="wd1.html">wd1</A>
+
+Link to Run Definitions:         <A HREF="#_966808741">SD_format For loops: threads=2 iorate=max</A>
+                                 <A HREF="#_1908153060">rd1 For loops: None</A>
+
+
+<a name="_966808741"></a><i><b>17:46:33.003 Starting RD=SD_format; I/O rate: Uncontrolled MAX; elapsed=(none); For loops: threads=2 iorate=max</b></i>
+
+
+3月 29, 2024    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue 
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth 
+17:46:34.050           1      320.0    40.00  131072   0.00    0.093    0.000    0.093     0.00     4.12    0.490    0.0 
+17:46:34.057     avg_2-1        0.0     0.00       0   0.00    0.000    0.000    0.000     0.00     0.00    0.000    0.0 
+
+<a name="_1908153060"></a><i><b>17:46:35.002 Starting RD=rd1; I/O rate: 100; elapsed=5; For loops: None</b></i>
+
+
+3月 29, 2024    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue 
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth 
+17:46:36.016           1       74.0     0.07    1024  51.35    0.044    0.025    0.065     0.08     0.14    0.027    0.0 
+17:46:37.012           2      106.0     0.10    1024  53.77    0.045    0.027    0.066     0.20     0.12    0.032    0.0 
+17:46:38.010           3       95.0     0.09    1024  49.47    0.039    0.022    0.056     0.25     0.15    0.035    0.0 
+17:46:39.012           4      105.0     0.10    1024  49.52    0.047    0.024    0.069     0.08     0.40    0.045    0.0 
+17:46:40.014           5       78.0     0.08    1024  60.26    0.042    0.029    0.062     0.27     0.10    0.037    0.0 
+17:46:40.042     avg_2-5       96.0     0.09    1024  52.86    0.044    0.026    0.064     0.27     0.40    0.038    0.0 
+17:46:41.353 Vdbench execution completed successfully

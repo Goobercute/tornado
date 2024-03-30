@@ -1,0 +1,67 @@
+<title>Vdbench output/logfile.html</title><pre>
+Copyright (c) 2000, 2018, Oracle and/or its affiliates. All rights reserved.
+Vdbench distribution: vdbench50407
+
+17:46:31.402 input argument scanned: '-f/var/folders/rr/zttrr5f515n6hr2v4jql2z1c0000gn/T/parmfile'
+17:46:31.402 java.vendor                   Oracle Corporation
+17:46:31.402 java.home                     /Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+17:46:31.402 java.vm.specification.version 17
+17:46:31.402 java.vm.version               17+35-LTS-2724
+17:46:31.402 java.vm.vendor                Oracle Corporation
+17:46:31.402 java.specification.version    17
+17:46:31.402 java.class.version            61.0
+17:46:31.402 user.name                     gurongyao
+17:46:31.403 user.dir                      /Users/gurongyao/PycharmProjects/tornado/vdbench_result/vdbench50407_mac
+17:46:31.403 java.io.tmpdir                /var/folders/rr/zttrr5f515n6hr2v4jql2z1c0000gn/T/
+17:46:31.403 java.class.path               ./:./classes:./vdbench.jar
+17:46:31.403 os.name                       Mac OS X
+17:46:31.403 os.arch                       aarch64
+17:46:31.403 os.version                    14.2.1
+17:46:31.403 sun.arch.data.model           64
+17:46:31.404 Flushing all reports
+17:46:31.438 Starting slave: /Users/gurongyao/PycharmProjects/tornado/vdbench_result/vdbench50407_mac/vdbench SlaveJvm -m localhost -n localhost-10-240329-17.46.31.362 -l localhost-0 -p 5570   
+17:46:32.171 Slave localhost-0 (pid  66737) connected to master 66732
+17:46:32.174 All slaves are now connected
+17:46:32.203 sd=sd1,lun=/var/folders/rr/zttrr5f515n6hr2v4jql2z1c0000gn/T/quick_vdbench_test lun size: 0 bytes; 0.0000 GB (1024**3); 0.0000 GB (1000**3)
+17:46:32.203 Vdbench will attempt to expand a disk file if the requested file size is a multiple of 1mb
+17:46:32.203 lun=/var/folders/rr/zttrr5f515n6hr2v4jql2z1c0000gn/T/quick_vdbench_test does not exist or is too small. host=localhost
+
+Link to Run Definitions:         <A HREF="#_966808741">SD_format For loops: threads=2 iorate=max</A>
+                                 <A HREF="#_1908153060">rd1 For loops: None</A>
+
+17:46:32.214 Not every host is reporting Cpu statistics. Cpu reporting disabled
+17:46:32.216 Flushing all reports
+17:46:32.227 Waiting for synchronization of all slaves
+17:46:32.638 Synchronization of all slaves complete
+
+<a name="_966808741"></a><i><b>17:46:33.003 Starting RD=SD_format; I/O rate: Uncontrolled MAX; elapsed=(none); For loops: threads=2 iorate=max</b></i>
+
+17:46:33.378 All sequential workloads on all slaves are done.
+17:46:33.378 This triggers end of run inspite of possibly some non-sequential workloads that are still running.
+
+3月 29, 2024    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue 
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth 
+17:46:34.052           1      320.0    40.00  131072   0.00    0.093    0.000    0.093     0.00     4.12    0.490    0.0 
+17:46:34.059     avg_2-1        0.0     0.00       0   0.00    0.000    0.000    0.000     0.00     0.00    0.000    0.0 
+17:46:34.169 Flushing all reports
+17:46:34.170 Java Heap in MB. max:  512.000; current:   66.000; used:   33.899; free:   32.101
+17:46:34.181 Waiting for synchronization of all slaves
+17:46:34.492 Synchronization of all slaves complete
+
+<a name="_1908153060"></a><i><b>17:46:35.002 Starting RD=rd1; I/O rate: 100; elapsed=5; For loops: None</b></i>
+
+
+3月 29, 2024    interval        i/o   MB/sec   bytes   read     resp     read    write     read    write     resp  queue 
+                               rate  1024**2     i/o    pct     time     resp     resp      max      max   stddev  depth 
+17:46:36.018           1       74.0     0.07    1024  51.35    0.044    0.025    0.065     0.08     0.14    0.027    0.0 
+17:46:37.012           2      106.0     0.10    1024  53.77    0.045    0.027    0.066     0.20     0.12    0.032    0.0 
+17:46:38.010           3       95.0     0.09    1024  49.47    0.039    0.022    0.056     0.25     0.15    0.035    0.0 
+17:46:39.013           4      105.0     0.10    1024  49.52    0.047    0.024    0.069     0.08     0.40    0.045    0.0 
+17:46:40.015           5       78.0     0.08    1024  60.26    0.042    0.029    0.062     0.27     0.10    0.037    0.0 
+17:46:40.042     avg_2-5       96.0     0.09    1024  52.86    0.044    0.026    0.064     0.27     0.40    0.038    0.0 
+17:46:40.257 Flushing all reports
+17:46:40.259 Java Heap in MB. max:  512.000; current:   66.000; used:   22.982; free:   43.018
+17:46:40.272 Ending Reporter
+17:46:41.352 Vdbench execution completed successfully. Output directory: /Users/gurongyao/PycharmProjects/tornado/vdbench_result/vdbench50407_mac/output 
+
+17:46:42.295 Java Heap in MB. max:  512.000; current:   66.000; used:   20.325; free:   45.675
